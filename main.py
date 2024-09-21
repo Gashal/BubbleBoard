@@ -20,7 +20,7 @@ label_1 = tk.Label(root, text='Start the Game\n Buddy!',
                    pady=40,
                    width=20,
                    #anchor='w',
-                   relief=tk.RAISED,
+                   relief=tk.GROOVE,
                    bd=20,
                    justify=tk.CENTER
                    )
@@ -62,7 +62,7 @@ def chage_bg():
     b = rd.randint(0, 255)
 
     root.config(bg=f'#{r:02x}{g:02x}{b:02x}')
-    print(f'#{r:x}{g:x}{b:x}', r, g, b)
+    print(f'#{r:02x}{g:02x}{b:02x}', r, g, b)
 
 
 button_1 = tk.Button(root, text="Let's go", command=chage_bg)
